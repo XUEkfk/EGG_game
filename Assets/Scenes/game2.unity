@@ -2302,7 +2302,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1495071202}
-  - component: {fileID: 1495071203}
   - component: {fileID: 1495071204}
   m_Layer: 0
   m_Name: "\u5206\u6578\u8A08\u7B97"
@@ -2326,20 +2325,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1495071203
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1495071201}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 58c2d29e4a8b8644aa911020b081a4cf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  wKeyPressCount: 0
-  buttonDing: 3
 --- !u!114 &1495071204
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2437,10 +2422,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1517104831}
-  - component: {fileID: 1517104830}
-  - component: {fileID: 1517104832}
-  - component: {fileID: 1517104833}
-  - component: {fileID: 1517104834}
   - component: {fileID: 1517104835}
   m_Layer: 0
   m_Name: "\u934B\u5B50\u52D5\u756B\u63A7\u5236"
@@ -2449,23 +2430,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1517104830
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1517104829}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 959419d4884e16d428a97a6d7c0dc13b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  slider: {fileID: 158575332}
-  messageText: {fileID: 733220006}
-  increaseSpeed: 1
-  prefab2: {fileID: 1354964487}
-  animator: {fileID: 1438150742}
 --- !u!4 &1517104831
 Transform:
   m_ObjectHideFlags: 0
@@ -2481,86 +2445,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1517104832
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1517104829}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 64a550c05f824a34db9fecb568f90b07, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  slider: {fileID: 158575332}
-  messageText: {fileID: 733220006}
-  increaseSpeed: 1
-  prefab2: {fileID: 1354964487}
-  animator: {fileID: 1438150742}
-  buttonSlider: 2
-  buttonEx: 9
---- !u!114 &1517104833
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1517104829}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 233b0ee3e41cd2b4ebd71875f5e33674, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  slider: {fileID: 158575332}
-  messageText: {fileID: 733220006}
-  increaseSpeed: 1
-  targetPosition: {x: -12, y: 4, z: 0}
-  prefab2: {fileID: 1354964487}
-  eggPrefab: {fileID: 6776331372276291997, guid: 7099cba678116b8458df3b0e70b6ae8b, type: 3}
-  spriteZero: {fileID: 21300000, guid: 38e34dc5be415aa4ab6b0ba18a7568f8, type: 3}
-  spriteOne: {fileID: 21300000, guid: c1ba2e114a37e104bb18a2880cdb873f, type: 3}
-  spriteTwo: {fileID: 21300000, guid: 87b4bfbce7de81d4c81da1353e0f08c3, type: 3}
-  spriteThree: {fileID: 21300000, guid: cf9560c942461b245acc8ee5e6e42ddb, type: 3}
-  animator: {fileID: 1438150742}
-  X: 0
-  Y: 7.5
-  audioSource: {fileID: 899739692}
-  wKeyClip: {fileID: 8300000, guid: 4f5bcb5a3597c594aaf47d291132115f, type: 3}
-  animationEndClip: {fileID: 8300000, guid: bec8a172462cd1b4b9fb0791ba0687d0, type: 3}
-  ding: {fileID: 8300000, guid: 1ded239ddb6b8b34b81867df60b31d57, type: 3}
---- !u!114 &1517104834
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1517104829}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b3dd742d20f525340bc9506ef4534755, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  buttonSlider: 2
-  buttonDing: 8
-  buttonPot: 4
-  slider: {fileID: 158575332}
-  messageText: {fileID: 733220006}
-  increaseSpeed: 1
-  targetPosition: {x: -12, y: 4, z: 0}
-  prefab2: {fileID: 1354964487}
-  eggPrefab: {fileID: 6776331372276291997, guid: 7099cba678116b8458df3b0e70b6ae8b, type: 3}
-  spriteZero: {fileID: 21300000, guid: 38e34dc5be415aa4ab6b0ba18a7568f8, type: 3}
-  spriteOne: {fileID: 21300000, guid: c1ba2e114a37e104bb18a2880cdb873f, type: 3}
-  spriteTwo: {fileID: 21300000, guid: 87b4bfbce7de81d4c81da1353e0f08c3, type: 3}
-  spriteThree: {fileID: 21300000, guid: cf9560c942461b245acc8ee5e6e42ddb, type: 3}
-  animator: {fileID: 1438150742}
-  X: 0
-  Y: 7.5
-  audioSource: {fileID: 899739692}
-  wKeyClip: {fileID: 8300000, guid: 4f5bcb5a3597c594aaf47d291132115f, type: 3}
-  animationEndClip: {fileID: 8300000, guid: bec8a172462cd1b4b9fb0791ba0687d0, type: 3}
-  ding: {fileID: 8300000, guid: 1ded239ddb6b8b34b81867df60b31d57, type: 3}
 --- !u!114 &1517104835
 MonoBehaviour:
   m_ObjectHideFlags: 0
