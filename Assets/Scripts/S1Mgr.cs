@@ -1,20 +1,17 @@
-using System;
-using System.ComponentModel.Design;
+using System.Collections;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class S1Mgr : MonoBehaviour
 {
-    [Header("UI 動畫控制器")]
-    public Animator titleAnimator;
+    [Header("UI 動畫控制器")] public Animator titleAnimator;
     public Animator mainObjectAnimator;
     public Animator descriptionAnimator;
+    public Animator transitionAnim;
 
-    [Header("輸入模組")]
-    public ArduinoInputHandler inputHandler;
+    [Header("輸入模組")] public ArduinoInputHandler inputHandler;
 
     private bool animationPlayed = false; // 是否已經播過動畫
-    
+
 
     private void Awake()
     {
@@ -44,6 +41,7 @@ public class S1Mgr : MonoBehaviour
         if (titleAnimator != null) titleAnimator.enabled = false;
         if (mainObjectAnimator != null) mainObjectAnimator.enabled = false;
         if (descriptionAnimator != null) descriptionAnimator.enabled = false;
+        if (transitionAnim != null) transitionAnim.enabled = false;
     }
 
     private void HandlePotTriggered()
@@ -52,8 +50,7 @@ public class S1Mgr : MonoBehaviour
         {
             // 第一次觸發：播放動畫
             PlayAnimations();
-            animationPlayed = true;
-            Debug.Log("波動畫");
+            StartCoroutine(SetAnimationPlayedDelayed(1.5f));
         }
         else
         {
@@ -69,10 +66,20 @@ public class S1Mgr : MonoBehaviour
         if (descriptionAnimator != null) descriptionAnimator.enabled = true;
     }
 
+    private IEnumerator SetAnimationPlayedDelayed(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        animationPlayed = true;
+    }
+
     private void LoadNextScene()
     {
         Debug.Log("換場景");
         // TODO: 之後加淡入淡出特效
+        if (transitionAnim)
+        {
+            transitionAnim.enabled = true;
+        }
         //SceneManager.LoadScene("S2"); // 換成你的下一個場景名稱
     }
 }
