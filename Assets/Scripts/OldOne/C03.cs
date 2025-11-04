@@ -57,7 +57,6 @@ public class C03 : MonoBehaviour
 
     void Start()
     {
-        slider.onValueChanged.AddListener(delegate { OnSliderValueChanged(); });
         timer = 0f; // 初始化計時器
         InstantiateEgg(); // 實例化初始的預製物件
 
@@ -164,12 +163,7 @@ public class C03 : MonoBehaviour
             }
         }
     }
-
-    void OnSliderValueChanged()
-    {
-        // 顯示slider的數值
-        //Debug.Log("Slider value: " + slider.value);
-    }
+    
 
     IEnumerator DisablePrefabAfterDelay(float delay)
     {
